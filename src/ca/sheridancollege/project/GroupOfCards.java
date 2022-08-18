@@ -21,8 +21,9 @@ public class GroupOfCards {
     private ArrayList<Card> cards;
     private int size;//the size of the grouping
 
-    public GroupOfCards(int size) {
+    public GroupOfCards(int size, ArrayList<Card> cards) {
         this.size = size;
+        this.cards = cards;
     }
 
     /**
@@ -50,6 +51,10 @@ public class GroupOfCards {
      */
     public void setSize(int size) {
         this.size = size;
+    }
+
+    public void setCards(ArrayList<Card> cards) {
+        this.cards = cards;
     }
 
 }//end class
