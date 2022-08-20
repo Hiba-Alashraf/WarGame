@@ -6,12 +6,8 @@ package ca.sheridancollege.project;
 
 import java.util.ArrayList;
 import static org.junit.Assert.assertEquals;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
+
 
 /**
  *
@@ -30,7 +26,7 @@ public class MainTest
     * Test of isUniqueUsername method, of class Main.
     * 
     */
-   @org.junit.Test
+   @Test
    public void testIsUniqueUsernameGood ()      // different length & added charachters name
    {
       System.out.println("isUniqueUsernameGood");
@@ -49,7 +45,7 @@ public class MainTest
     * Test of isUniqueUsername method, of class Main.
     * 
     */
-   @org.junit.Test
+   @Test
    public void testIsUniqueUsernameBad ()       // same length & upper/lower cased charachters name
    {
       System.out.println("isUniqueUsernameBad");
@@ -68,7 +64,7 @@ public class MainTest
     * Test of isUniqueUsername method, of class Main.
     * 
     */
-   @org.junit.Test
+   @Test
    public void testIsUniqueUsernameBoundary ()
    {
       System.out.println("isUniqueUsernameBoundary");
