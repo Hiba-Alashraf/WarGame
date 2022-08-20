@@ -14,6 +14,10 @@ import java.util.Scanner;
  */
 public class Main {
     private static final int MINIMUM_LENGTH = 4;
+       public static boolean isValidLength (ArrayList<Player> warPlayerList, String name)
+    {
+        return name.length()>=MINIMUM_LENGTH;
+    }
   
     
     public static void main(String[] args) throws Exception {
@@ -49,7 +53,7 @@ public class Main {
         String playerName;
         
         while( PlayerList.size() <2 ){
-            System.out.println("<<<<<<<<<<>>>>>>>>>>>>");
+           
             System.out.println("Enter your Name Please:");
             playerName = scn.next();
             
@@ -73,7 +77,7 @@ public class Main {
 
         if( PlayerList.size() == 2 ){
             
-            System.out.println("*******************");
+   
             
             WarGame war = new WarGame("WAR");
             
@@ -94,11 +98,8 @@ public class Main {
             
             
         }
-        
+        else System.out.println("the game needs two players");
      
     }
   
-       public static boolean isValidLength (ArrayList<Player> warPlayerList, String name)
-    {
-        return name.length()>=MINIMUM_LENGTH;
-    }}
+   }
