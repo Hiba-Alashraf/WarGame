@@ -33,7 +33,10 @@ public class WarGame extends Game {
     private int count2 = 0;
     private int iterator = 0;
     private final int CardLimit = 5;
-    private int begun1, final1, begun2, final2;
+    private int begun1;
+     private int final1;
+      private int begun2;
+       private int final2;
     
     private Player player1;
     private Player player2;
