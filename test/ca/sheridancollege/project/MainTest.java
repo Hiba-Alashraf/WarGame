@@ -31,7 +31,7 @@ public class MainTest {
       System.out.println("isValidLength");
       ArrayList<Player> warPlayerList = new ArrayList<>();
      
-      String name = "reuben";
+      String name = "Hiba";
       boolean expResult = true;
       boolean result = Main.isValidLength(warPlayerList, name);
       assertEquals(expResult, result);
@@ -42,7 +42,7 @@ public class MainTest {
       System.out.println("isValidLength");
       ArrayList<Player> warPlayerList = new ArrayList<>();
      
-      String name = "reu";
+      String name = "Hib";
       boolean expResult = false;
       boolean result = Main.isValidLength(warPlayerList, name);
       assertEquals(expResult, result);
@@ -53,7 +53,7 @@ public class MainTest {
       System.out.println("isValidLength");
       ArrayList<Player> warPlayerList = new ArrayList<>();
      
-      String name = "reub";
+      String name = "Hiba";
       boolean expResult = true;
       boolean result = Main.isValidLength(warPlayerList, name);
       assertEquals(expResult, result);
