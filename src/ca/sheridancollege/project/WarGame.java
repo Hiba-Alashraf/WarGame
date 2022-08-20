@@ -82,7 +82,7 @@ public class WarGame extends Game {
         while(!cards1.isEmpty() && !cards2.isEmpty() ) {
             
             try {
-                TimeUnit.MILLISECONDS.sleep(400);
+                TimeUnit.MILLISECONDS.sleep(600);
             } catch (InterruptedException ex) {
                 Logger.getLogger(WarGame.class.getName()).log(Level.SEVERE, null, ex);
             }
